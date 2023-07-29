@@ -6,7 +6,7 @@
 
 ### About 📖
 
-Solution to the ninth assignment in JavaScipt chapter in [TOP](https://www.theodinproject.com/lessons/javascript-knights-travails).
+Solution to the 9th assignment in the JavaScipt chapter in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails).
 
 ### Description 📚
 
