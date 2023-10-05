@@ -15,3 +15,8 @@ This repo contains the function `knightMoves`, which shows the shortest way poss
 ### Learning 🌱
 
 The point of this project is using a data structure on a real world problem. By organizing all possible moves a knight can make in a data tree, we can easily find the shortest path to a leaf node to effectively find the answer.
+
+this is what my typescript project looks like: 
+  utils/graphDataStructure.ts // this is an utility that needs to be used in the main file
+  knightsTravails.ts // this is the main file
+  tsconfig.json
