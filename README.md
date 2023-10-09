@@ -4,23 +4,23 @@
 
 # Knight Travails
 
-## About 📖
+### About 📖
 
 This repository contains a JavaScript solution to the 9th assignment in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails). The project focuses on finding all possible trajectories a knight can take on a standard 8x8 chessboard, starting from a given position, and then determining the shortest path between any two squares using a graph data structure.
 
-## Theoretical Idea 🐴
+### Theoretical Idea 🐴
 
 In chess, a knight can move to any square on the 8x8 chessboard from any other square, given enough turns. For a visual representation, check out [this animation](https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/ruby_programming/computer_science/project_knights_travails/imgs/00.png).
 
-## Description 📚
+### Description 📚
 
 This repository implements a program that calculates all possible trajectories a knight can take, starting from a specified position, until all squares on the chessboard have been visited. It organizes these trajectories in a graph data structure. The primary objective is to find the shortest path between any two given squares on the chessboard by applying an algorithm that determines the shortest path between two nodes in the graph.
 
-## Learning 🌱
+### Learning 🌱
 
 This project serves as an example of utilizing the [Graph Data Structure](https://github.com/nightrunner4/graph-data-structure) previously developed to solve a real-world problem. It demonstrates practical applications of graph theory in solving chess-related problems efficiently.
 
-## Usage
+### Usage
 
 To find the shortest path between two squares on the chessboard, you can use the following code snippet:
 
