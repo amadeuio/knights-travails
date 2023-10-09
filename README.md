@@ -15,3 +15,8 @@ This repo contains the function `knightMoves`, which shows the shortest way poss
 ### Learning 🌱
 
 The point of this project is using a graph structure on a real world problem. By organizing all possible moves a knight can make in a graph tree, we can easily find the shortest path to a leaf node to effectively find the answer.
+
+### Usage
+
+// find the shortest path
+`console.log(path.shortestPath(33, 43))` // 33, 12, 24, 43
