@@ -1,7 +1,7 @@
 // graph constructor, receives data of any type
 export class Graph<T> {
   // key of type T, value of type array of T
-  private nodes: Map<T, T[]>;
+  nodes: Map<T, T[]>;
 
   constructor() {
     this.nodes = new Map();
