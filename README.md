@@ -14,8 +14,8 @@ A knight in chess can move to any square on the standard 8x8 chess board from an
 
 ### Description 📚
 
-This repo implements a program that finds all the possible trajectories a knight can take starting from a given position until all squares have been visited, and organizes them in a data graph.
-This is done to then find the shortes path between two given squares, by applying an algorithm that finds the shortes path between two nodes in the graph.
+This repo implements a program that finds all the possible trajectories a knight can take starting from a given position until all squares have been visited, organizing them in a data graph.
+This is done to then find the shortest path between any two given squares, by applying an algorithm that finds the shortes path between two nodes in the graph.
 
 ### Learning 🌱
 
