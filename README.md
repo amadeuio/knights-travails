@@ -26,7 +26,9 @@ This project serves as an example of utilizing the [Graph Data Structure](https:
 
 The position is specified with a two digit number that represents xy cordinates, each coordinate going from 0 to 7. If the number is a single digit, it means that `x = 0`. This data formatting allows for a more efficient graph mapping and processing, as well as shorter code.
 
-`const startPosition = 33; // start the traversal from the center of the board`
+```typescript
+const startPosition = 33; // the traversal will start from the center of the board
+```
 
 Note: The starting position ultimately doesn't affect the shortest path between two squares, so
 we'll just choose the central square for simplicity sake.
