@@ -6,7 +6,7 @@
 
 ### About 📖
 
-This repository contains a JavaScript solution to the 9th assignment in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails). The project focuses on finding all possible trajectories a knight can take on a standard 8x8 chessboard, starting from a given position, and then determining the shortest path between any two squares using a graph data structure.
+This repository contains a JavaScript solution to the 9th assignment in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails). The project focuses on finding all possible trajectories a knight can take on a standard 8x8 chessboard and then determining the shortest path between any two squares using a graph data structure.
 
 ### Theoretical Idea 🐴
 
@@ -14,11 +14,11 @@ In chess, a knight can move to any square on the 8x8 chessboard from any other s
 
 ### Description 📚
 
-This repository implements a program that calculates all possible trajectories a knight can take, starting from a specified position, until all squares on the chessboard have been visited. It organizes these trajectories in a graph data structure. The primary objective is to find the shortest path between any two given squares on the chessboard by applying an algorithm that determines the shortest path between two nodes in the graph.
+This repository implements a program that calculates all possible trajectories a knight can take, starting from a specified position, until all squares on the chessboard have been visited, and organizes these trajectories in a graph data structure. Then, the shortest path between any two given squares on the chessboard can be found by applying an algorithm that determines the shortest path between two nodes in the graph.
 
 ### Learning 🌱
 
-This project serves as an example of utilizing the [Graph Data Structure](https://github.com/nightrunner4/graph-data-structure) previously developed to solve a real-world problem. It demonstrates practical applications of graph theory in solving chess-related problems efficiently.
+This project serves as an example of utilizing the [Graph Data Structure](https://github.com/nightrunner4/graph-data-structure) previously developed to solve a real-world problem.
 
 ### Usage
 

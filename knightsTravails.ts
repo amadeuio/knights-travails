@@ -3,7 +3,7 @@ import { Graph } from "./utils/graphDataStructure";
 
 // finds all immediate knight moves from a starting move
 function allMoves(initial: number): number[] {
-  // Extract the x and y coordinates from the two-digit number
+  // extract the x and y coordinates from the two-digit number
   const x: number = Math.floor(initial / 10);
   const y: number = initial % 10;
 
