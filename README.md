@@ -22,6 +22,8 @@ This project serves as an example of utilizing the [Graph Data Structure](https:
 
 ### Usage 🖊️
 
+Let's build the knight's path and find the shortest path between two squares:
+
 **1. Choose starting position to start the path**
 
 The position is specified with a two digit number that represents `xy` cordinates, each coordinate going from 0 to 7. If the number is a single digit, it means that `x = 0`. This data formatting allows for a more efficient graph mapping and processing, as well as shorter code.
