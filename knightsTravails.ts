@@ -50,6 +50,40 @@ function moveToNode(initial: number): void {
   });
 }
 
+// utility function: transforms number to array and vice versa
+function transformNumberOrArray(input: number[] | number): number | number[] {
+  if (typeof input === "number") {
+    const tens = Math.floor(input / 10);
+    const ones = input % 10;
+    return [tens, ones];
+  } else if (Array.isArray(input)) {
+    const tens = input[0];
+    const ones = input[1];
+    return tens * 10 + ones;
+  }
+
+  return input;
+}
+
+// takes initial & final position in array format, and prints shortest path between them
+function knightMoves(initial: number[], final: number[]): void {
+  const initialNumber = transformNumberOrArray(initial) as number;
+  const finalNumber = transformNumberOrArray(final) as number;
+
+  const shortestPathArr = path.shortestPath(initialNumber, finalNumber);
+
+  console.log(
+    `You made it in ${shortestPathArr?.length} moves! Here's your path:`
+  );
+
+  shortestPathArr?.forEach((step) => {
+    const stepArray = transformNumberOrArray(step);
+    console.log(stepArray);
+  });
+}
+
+// usage
+
 // choose starting position
 const startPosition = 33;
 
@@ -59,11 +93,15 @@ const path = new Graph<number>();
 // create starting node
 path.addNode(startPosition);
 
-// navigate the graph, creating each node along the way
+// navigate the graph, creating each node along the way by calling moveToNode,
+// effectively building the whole set of possible trajectories
 path.breadthFirstTraversal(startPosition, moveToNode);
 
-// print the whole graph
+// print the graph
 path.printGraph();
 
 // find the shortest path
 console.log(path.shortestPath(33, 43));
+
+// find shortest path with knightMoves() function as requested in the TOP assignment
+knightMoves([3, 3], [4, 3]);
