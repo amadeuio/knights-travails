@@ -24,7 +24,7 @@ This project serves as an example of utilizing the [Graph Data Structure](https:
 
 **1. Choose starting position to start the path**
 
-The position is specified with a two digit number that represents xy cordinates, each coordinate going from 0 to 7. If the number is a single digit, it means that `x = 0`. This data formatting allows for a more efficient graph mapping and processing, as well as shorter code.
+The position is specified with a two digit number that represents `xy` cordinates, each coordinate going from 0 to 7. If the number is a single digit, it means that `x = 0`. This data formatting allows for a more efficient graph mapping and processing, as well as shorter code.
 
 ```typescript
 const startPosition = 33; // the traversal will start from the center of the board
@@ -47,7 +47,7 @@ path.addNode(startPosition);
 
 **4. Build the path**
 
-Navigate the graph, creating each node & it's neighbors along the way by calling `moveToNode`, effectively building the whole set of possible trajectories.
+Navigate the graph, creating each node and it's neighbors along the way by calling `moveToNode` callback, effectively building the whole set of possible trajectories.
 
 ```typescript
 path.breadthFirstTraversal(startPosition, moveToNode);
@@ -83,9 +83,9 @@ console.log(path.shortestPath(33, 43)); // [ 33, 12, 24, 43 ]
 
 This function simply logs the result of the `shortestPath()` method in a prettier way and formats the data to a 2-dimentional array instead of a number as specified in the assignment, by using a simple utility function called `transformNumberOrArray()`.
 
-`knightMoves([3, 3], [4, 3])`
-
 ```typescript
+knightMoves([3, 3], [4, 3])
+
 You made it in 4 moves! Here's your path:
 [ 3, 3 ]
 [ 1, 2 ]
