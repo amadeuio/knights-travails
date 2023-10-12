@@ -20,10 +20,73 @@ This repository implements a program that calculates all possible trajectories a
 
 This project serves as an example of utilizing the [Graph Data Structure](https://github.com/nightrunner4/graph-data-structure) previously developed to solve a real-world problem.
 
-### Usage
+### Usage 🖊️
 
-To find the shortest path between two squares on the chessboard, you can use the following code snippet:
+**1. Choose starting position to start the path**
 
-```javascript
-console.log(path.shortestPath(33, 43)); // Output: [33, 12, 24, 43]
+The position is specified with a two digit number that represents xy cordinates, each coordinate going from 0 to 7. If the number is a single digit, it means that `x = 0`. This data formatting allows for a more efficient graph mapping and processing, as well as shorter code.
+
+`const startPosition = 33; // start the traversal from the center of the board`
+
+Note: The starting position ultimately doesn't affect the shortest path between two squares, so
+we'll just choose the central square for simplicity sake.
+
+**2. Create path**
+
+```typescript
+const path = new Graph<number>();
+```
+
+**3. Create starting node**
+
+```typescript
+path.addNode(startPosition);
+```
+
+**4. Build the path**
+
+Navigate the graph, creating each node & it's neighbors along the way by calling `moveToNode`, effectively building the whole set of possible trajectories.
+
+```typescript
+path.breadthFirstTraversal(startPosition, moveToNode);
+```
+
+**5. Let's see how the path looks by using `printGraph()`**
+
+```typescript
+33 -> [12, 14, 21, 25, 41, 45, 52, 54]
+12 -> [0, 4, 20, 24, 31, 33]
+14 -> [2, 6, 22, 26, 33, 35]
+21 -> [0, 2, 13, 33, 40, 42]
+25 -> [4, 6, 13, 17, 33, 37, 44, 46]
+41 -> [20, 22, 33, 53, 60, 62]
+45 -> [24, 26, 33, 37, 53, 57, 64, 66]
+52 -> [31, 33, 40, 44, 60, 64, 71, 73]
+54 -> [33, 35, 42, 46, 62, 66, 73, 75]
+0 -> [12, 21]
+etc etc etc...
+```
+
+We won't provide the whole graph data in this README for simplicity, but as you can see, all sets of possible trajectories have been effectively mapped to the data graph, each node representing a square, and it's neighbors representing all squares the knight can immediately visit next, until all squares in the 8x8 board have been visited.
+
+**6. Let's use `shortestPath()`**
+
+Once the whole path is mapped in the graph, the shortest path between two squares can easily be found by calling the `shortestPath()` method we developed previously.
+
+```typescript
+console.log(path.shortestPath(33, 43)); // [ 33, 12, 24, 43 ]
+```
+
+**7. Shortest path with `knightMoves()` function as requested in the assignment**
+
+This function simply logs the result of the `shortestPath()` method in a prettier way and formats the data to a 2-dimentional array instead of a number as specified in the assignment, by using a simple utility function called `transformNumberOrArray()`.
+
+`knightMoves([3, 3], [4, 3])`
+
+```typescript
+You made it in 4 moves! Here's your path:
+[ 3, 3 ]
+[ 1, 2 ]
+[ 2, 4 ]
+[ 4, 3 ]
 ```
