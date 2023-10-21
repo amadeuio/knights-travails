@@ -201,8 +201,6 @@ export class Graph<T> {
   }
 }
 
-//export { Graph };
-
 /* 
 
 // print function
@@ -254,5 +252,3 @@ graph.breadthFirstTraversal("A", print); // A, B, C, D, E, F
 console.log(graph.shortestPath("A", "F")); // A, B, C, E, F 
 
 */
-
-//export {};
