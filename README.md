@@ -6,7 +6,7 @@
 
 ### About 📖
 
-This repository contains a TypeScript solution to the 9th assignment in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails). The project focuses on finding all possible trajectories a knight can take on a standard 8x8 chessboard and then determining the shortest path between any two squares using a graph data structure.
+This repository contains a TypeScript solution to the 9th assignment of the JavaScript chapter in [The Odin Project](https://www.theodinproject.com/lessons/javascript-knights-travails). The project focuses on finding all possible trajectories a knight can take on a standard 8x8 chessboard and then determining the shortest path between any two squares using a graph data structure.
 
 ### Theoretical Idea 🐴
 
