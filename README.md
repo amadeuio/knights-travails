@@ -14,7 +14,7 @@ In chess, a knight can move to any square on the 8x8 chessboard from any other s
 
 ### Description 📚
 
-This repository implements a program that calculates all possible trajectories a knight can take, starting from a specified position, until all squares on the chessboard have been visited, and organizes these trajectories in a graph data structure. Then, the shortest path between any two given squares on the chessboard can be found by applying an algorithm that determines the shortest path between two nodes in the graph.
+This repository implements a program that calculates all possible trajectories a knight can take, starting from a specified position, until all squares on the chessboard have been visited, and organizes these trajectories in a graph data structure. Then, the shortest path between any two given squares on the chessboard is found by applying an algorithm that determines the shortest path between two nodes in the graph.
 
 ### Learning 🌱
 
@@ -32,8 +32,7 @@ The position is specified with a two digit number that represents `xy` cordinate
 const startPosition = 33; // the traversal will start from the center of the board
 ```
 
-Note: The starting position ultimately doesn't affect the shortest path between two squares, so
-we'll just choose the central square for simplicity sake.
+Note: Any starting square can be used.
 
 **2. Create path**
 
