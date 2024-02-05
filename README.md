@@ -18,7 +18,7 @@ This repository implements a program that calculates all possible trajectories a
 
 ### Learning 🌱
 
-This project serves as an example of utilizing the [Graph Data Structure](https://github.com/nightrunner4/graph-data-structure) previously developed to solve a real-world problem.
+This project serves as an example of utilizing the [Graph Data Structure](https://github.com/amadeuio/graph-data-structure) previously developed to solve a real-world problem.
 
 ### Usage 🖊️
 
